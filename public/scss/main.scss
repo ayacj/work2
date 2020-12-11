@@ -1,0 +1,95 @@
+body{
+    background-color: #010a24;
+}
+
+.app-wrap.main{
+    width: 100%;
+    max-width: 2000px;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    .app-container{
+        width: 100%;
+        .nav{
+            position: absolute;
+            text-align: center;
+            background-color: rgba(95, 158, 160, 0.301);
+            width: 100px;
+            height: 220px;
+            left: 0;
+            top:100px;
+            z-index: 10;
+            .items{
+                padding: 50px 0;
+                box-sizing: border-box;
+                .item{
+                    padding: 10px 0;
+                    box-sizing: border-box;
+                    border-bottom: 1px rgba(10, 92, 112, 0.37) solid;
+                    &:hover{
+                        background-color: rgba(255, 255, 255, 0.418);
+                    }
+                    a{
+                        color: #fff;
+                        font-size: 20px;
+                        text-decoration: none;   
+                    }
+                }
+                
+            }
+        }
+        .music-btn{
+            .fa-volume-down{
+                position: absolute;
+                left: 30px;
+                top:350px;
+                color: rgba(255, 255, 255, 0.808);
+                font-size: 40px;
+                z-index: 10;
+                cursor: pointer;
+            }
+            .fa-volume-mute{
+                position: absolute;
+                left: 30px;
+                top:350px;
+                color: rgba(255, 255, 255, 0.808);
+                font-size: 40px;
+                z-index: 10;
+                cursor: pointer;
+                display: none;
+            }
+        }
+        .app-content{
+            width: 100%;
+            height: 700px;
+            margin: auto;
+            background-color: rgb(0, 0, 0);
+            box-shadow:0px 5px 5px rgba(0, 0, 0, 0.603);
+            .frame{
+                position: relative;
+                width: 100%;
+                height: 100%;
+                margin: auto;
+                &::after{
+                    content:"";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    overflow: hidden;
+                    border-bottom: 1px rgb(87, 87, 87) solid;
+                    box-shadow:0px 10px 50px rgba(255, 255, 255, 0.377);
+                    background-color: rgba(0, 0, 0, 0.342);
+                }
+                video{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    
+                }
+            }
+        }
+
+    }
+}

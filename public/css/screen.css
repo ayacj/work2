@@ -1,0 +1,34 @@
+.app-wrap.screen .app-container .app-screen {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-color: #000;
+  z-index: 11;
+  display: block;
+}
+.app-wrap.screen .app-container .app-screen .screen-inner {
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.app-wrap.screen .app-container .app-screen .screen-inner .text {
+  color: #fff;
+  font-size: 30px;
+}
+.app-wrap.screen .app-container .app-screen .screen-inner .text .fa-headphones {
+  color: #fff;
+  font-size: 40px;
+  padding-right: 20px;
+  box-sizing: border-box;
+}
+.app-wrap.screen .app-container .app-screen .screen-inner .close .fa-angle-double-up {
+  color: #fff;
+  padding-top: 40px;
+  box-sizing: border-box;
+  font-size: 40px;
+  cursor: pointer;
+}

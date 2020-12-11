@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="public/css/reset.css">
+    <link rel="stylesheet" href="public/css/main.css">
+    <link rel="stylesheet" href="public/css/screen.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/0ee600ef77.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="app-wrap main screen">
+        <div class="app-container">
+            <div class="app-screen">
+                <div class="screen-inner">
+                    <div class="text">
+                        <i class="fas fa-headphones"></i>來場聽覺視覺兼備的饗宴
+                    </div>
+                    <div class="close">
+                        <i class="fas fa-angle-double-up"></i>
+                    </div>
+                </div>
+            </div>
+            <aside class="nav">
+                <ul class="items">
+                    <li class="item"><a href="#">首頁</a></li>
+                    <li class="item"><a href="#">聯絡</a></li>
+                    <li class="item"><a href="#">關於我們</a></li>
+                </ul>
+            </aside>
+            <div class="music-btn">
+                <i class="fas fa-volume-down" id="audio-btn" ></i>
+                <i class="fas fa-volume-mute" id="audio-btn" ></i>
+            </div>
+
+            <div class="app-content">
+                <div class="frame">
+                    <video loop autoplay muted="true">
+                        <source type="video/mp4" src="public/video/sea.mp4">
+                            你的瀏覽器不支援標籤
+                        </source>
+                    </video>
+                </div>
+            </div>
+            <audio id="auto" autoplay loop>
+                <source type="audio/mp3" src="public/video/sea.mp3"> 
+                    你的瀏覽器不支援audio標籤
+            </audio>
+    </div>
+        
+        
+
+
+
+    
+    <script>
+        $(function(){
+           $(".close").on("click", function(){
+            var music = document.getElementById("auto");
+            console.log(music.paused);
+            if (music.paused) { //判讀是否播放  
+                music.paused=false;
+                music.play(); //没有就播放
+            }  
+            $(".app-screen").slideUp("slow", function(){
+            }); 
+           });
+
+        $("#audio-btn").click(function(){
+	        var music = document.getElementById("auto");
+	        if(music.paused){
+		        music.play();
+		        $("#audio-btn").attr("i","fa-volume-mute");
+	        }
+            else{
+		        music.pause();
+		        $("#audio-btn").attr("i","fa-volume-down");
+	        }
+        });
+
+        });
+    </script>
+</body>
+</html>
