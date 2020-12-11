@@ -39,7 +39,7 @@ body {
   font-size: 20px;
   text-decoration: none;
 }
-.app-wrap.main .app-container .music-btn .fa-volume-down {
+.app-wrap.main .app-container .music-btn {
   position: absolute;
   left: 30px;
   top: 350px;
@@ -47,16 +47,6 @@ body {
   font-size: 40px;
   z-index: 10;
   cursor: pointer;
-}
-.app-wrap.main .app-container .music-btn .fa-volume-mute {
-  position: absolute;
-  left: 30px;
-  top: 350px;
-  color: rgba(255, 255, 255, 0.808);
-  font-size: 40px;
-  z-index: 10;
-  cursor: pointer;
-  display: none;
 }
 .app-wrap.main .app-container .app-content {
   width: 100%;

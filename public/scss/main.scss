@@ -39,25 +39,13 @@ body{
             }
         }
         .music-btn{
-            .fa-volume-down{
-                position: absolute;
-                left: 30px;
-                top:350px;
-                color: rgba(255, 255, 255, 0.808);
-                font-size: 40px;
-                z-index: 10;
-                cursor: pointer;
-            }
-            .fa-volume-mute{
-                position: absolute;
-                left: 30px;
-                top:350px;
-                color: rgba(255, 255, 255, 0.808);
-                font-size: 40px;
-                z-index: 10;
-                cursor: pointer;
-                display: none;
-            }
+            position: absolute;
+            left: 30px;
+            top:350px;
+            color: rgba(255, 255, 255, 0.808);
+            font-size: 40px;
+            z-index: 10;
+            cursor: pointer;
         }
         .app-content{
             width: 100%;

@@ -32,7 +32,6 @@
             </aside>
             <div class="music-btn">
                 <i class="fas fa-volume-down" id="audio-btn" ></i>
-                <i class="fas fa-volume-mute" id="audio-btn" ></i>
             </div>
 
             <div class="app-content">
@@ -72,11 +71,11 @@
 	        var music = document.getElementById("auto");
 	        if(music.paused){
 		        music.play();
-		        $("#audio-btn").attr("i","fa-volume-mute");
+		        $("#audio-btn").removeClass("fa-volume-mute").addClass("fa-volume-down");
 	        }
             else{
 		        music.pause();
-		        $("#audio-btn").attr("i","fa-volume-down");
+		        $("#audio-btn").removeClass("fa-volume-down").addClass("fa-volume-mute");
 	        }
         });
 
