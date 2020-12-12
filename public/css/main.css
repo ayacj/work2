@@ -15,10 +15,11 @@ body {
 .app-wrap.main .app-container .nav {
   position: absolute;
   text-align: center;
-  background-color: rgba(95, 158, 160, 0.301);
-  width: 100px;
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  width: 120px;
   height: 220px;
-  left: 0;
+  left: 10px;
   top: 100px;
   z-index: 10;
 }
@@ -30,9 +31,12 @@ body {
   padding: 10px 0;
   box-sizing: border-box;
   border-bottom: 1px rgba(10, 92, 112, 0.37) solid;
+  transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
 }
 .app-wrap.main .app-container .nav .items .item:hover {
   background-color: rgba(255, 255, 255, 0.418);
+  -webkit-backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px);
 }
 .app-wrap.main .app-container .nav .items .item a {
   color: #fff;
