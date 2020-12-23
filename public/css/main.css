@@ -82,8 +82,3 @@ body {
   height: 100%;
   object-fit: cover;
 }
-.app-wrap.main .app-container .pic .people img {
-  position: absolute;
-  top: 450px;
-  height: 40%;
-}
